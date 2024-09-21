@@ -1,0 +1,48 @@
+/* Pastikan sidebar dan konten utama memiliki tinggi penuh */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #5bc0de; /* Warna latar belakang sidebar */
+    height: 100%; /* Sidebar menutupi seluruh tinggi halaman */
+    padding-top: 20px;
+}
+
+.content {
+    padding: 20px;
+    overflow-y: auto; /* Untuk membuat konten utama dapat di-scroll jika terlalu panjang */
+}
+
+/* Tabel */
+.table {
+    margin-top: 20px;
+}
+
+.table-dark {
+    color: #000000; /* Ubah warna teks menjadi hitam agar kontras dengan background biru muda */
+    background-color: #add8e6; /* Biru muda */
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+    border-color: #87ceeb; /* Biru muda lebih gelap untuk border */
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #b0e0e6; /* Biru muda sedikit lebih gelap untuk baris ganjil */
+}
+
+.table-dark.table-hover tbody tr:hover {
+    background-color: #87ceeb; /* Biru muda lebih gelap untuk efek hover */
+}
